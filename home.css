@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fefefe;
+}
+nav{
+   border-bottom: 0.6px solid #ccc;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'loto',sans-serif;
+
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+nav .left-nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .left-nav span{
+    font-size: 30px;
+    margin: 8px 0px 0px 0px;
+    font-weight: 500;
+    color: dodgerblue;
+}
+nav .left-nav samp{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    color: dodgerblue;
+}
+nav .center-nav{
+    height: 40px;
+    width: 40%;
+    margin: 0px auto;
+    border: 1px solid #000;
+    padding: 2px 2px 3px 10px;
+}
+.nav .center-nav .search-box{
+    display: flex;
+    
+}input{
+    width: 90%;
+    height: 30px;
+    font-family: sans-serif;
+    color: #000;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 5px;
+    background: transparent;
+}
+span{
+    cursor: pointer;
+}
+
+
+
+
+h4{
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+nav .center-nav small{
+   margin: 0px 30px 0px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+}
+.nav .right-nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px 0px 0px;
+}
+nav .right-nav span{
+    margin: 0px 20px 0px 10px;
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+}
+.category{
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    display: inline-block;
+}
+.category-content{
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+    border: 0.6px solid #ccc;
+    border-top: none;
+    position: absolute;
+    padding: 20px;
+    color: #fff;
+    z-index: 1;
+    background: #589eee;
+    display: none;
+    margin: 0px 0px 0px 0px;
+    transition: 0.5s;
+}
+.category small{
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+}
+.category-content small{
+    font-family: 'loto',sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: dodgerblue;
+}
+.category:hover .category-content{
+    display: block;
+
+}
+/*end of nav style*/
+
+
+menu{
+    margin: 67.5px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+menu .left-menu{
+    width: 20%;
+    padding: 15px 10px;
+    border-right: 0.6px solid #ccc;
+    height: 710px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+menu .left-menu .menu{
+    margin: 6px;
+    padding: 10px 10px 10px 15px;
+    border-bottom: 0.6px solid #00000073;
+    font-family: 'loto',sans-serif;
+    font-family: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+menu .left-menu .menu .new{
+    padding: 10px;
+    width: 60px;
+    height: 30px;
+    background: white;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgba(30, 143, 255, 0.753);
+    display: flex;
+    align-items: center;
+    border: 0.6px solid rgba(255, 0, 0, 0.384);
+    text-align: center;
+   
+    cursor: pointer;
+}
+menu .left-menu .explore{
+    display: flex;
+    padding: 10px;
+    margin: 10px 0px 0px 40px;
+    width: 60%;
+    height: 40px;
+
+}
+menu .left-menu .explore:hover{
+   
+    border-radius: 50px;
+    background: #8bbcf552;
+    cursor: pointer;
+}
+menu .left-menu .explore samp{
+    color: #000;
+    font-family: 'loto',sans-serif;
+    font-weight: 500;
+    margin: 3px 0px 0px 12px;
+}
+menu .left-menu .explore span{
+    color: #000;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+.right-menu{
+    width: 80%;
+    height: 710px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+.right-menu .container{
+    margin: 40px 0px 0px 0px;
+    display: flex;
+}
+.right-menu .product button{
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    margin: 10px 0px 0px 170px;
+    cursor: pointer;
+    background: rgb(255, 232, 232);
+}
+.right-menu .product{
+    width: 25%;
+    padding: 0px 20px 20px 20px;
+    border: 0.5px solid #ccc;
+    border-left: none;
+    position: relative;
+}
+.right-menu .product small{
+    pointer-events: none;
+    font-family: 'loto',sans-serif;
+}
+.right-menu .product h3{
+    font-family: sans-serif;
+}
+.right-menu .product h3:hover{
+    text-decoration: underline;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+img{
+    width: 80%;
+}
+
+.paying{
+    position: absolute;
+    width: 100%;
+    height: 720px;
+    z-index: 1;
+    background: #dbdbdb41;
+    display: none;
+}
+.paying .close-payment{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 25px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 1400px;
+    cursor: pointer;
+}
+.paying .close-payment:hover{
+    background: #000;
+    color: #fff;
+}
+.paying .paying-method{
+  background: #fff;
+  width: 23%;
+  height: 600px;
+  margin: 5px 0px 0px 1105px;
+  padding: 12px 16px;
+  border-radius: 2px;
+    border: 0.3px solid #ccc;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    font-family: 'loto',sans-serif;
+    font-size: 18px;
+    text-align: center;
+   animation-name: modalopen;
+   animation-duration: 3s;
+    
+}
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/*.paying .paying-method:after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-left: 24px solid white;
+    border-radius: 33px 0;
+    top: -18px;
+    left: 20px;
+    width: 30px;
+    height: 34px;
+}*/
+
+.paying .paying-method .method{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    
+    z-index: 1;
+}
+.paying .paying-method .method small{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0px 0px 10px;
+}
+.paying .paying-method .method img{
+    width: 50px;
+    height: 50px;
+}
+.paying .paying-method .method p{
+    position: absolute;
+    font-family: 'loto',sans-serif;
+    font-size: 14px;
+    margin: 30px 0px 0px 60px;
+    color: #272727;
+    cursor: pointer;
+}
+.paying .paying-method .method p:hover{
+    text-decoration: underline;
+}
+/*searching page*/
+
+.product-container{
+    position: absolute;
+    width: 100vw;
+    height: 720px;
+    background:rgba(187, 184, 184, 0.589);
+    z-index: 1;
+    display: none;
+}
+.product-container samp{
+   margin: 0px 0px 0px 12px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+.product-container .chat{
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    color: #000;
+    float: right;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 620px 0px 0px 1350px;
+   
+}
+.product-container .chat-container{
+    width: 25%;
+    height: 500px;
+    background: url(image/whatsapp.PNG);
+    background-size: cover;
+    position: absolute;
+   margin: 50px 0px 0px 640px;
+   border-radius: 7px;
+   display: none;
+   animation-duration: 4s;
+   animation-name: chatopen;
+}
+@keyframes chatopen{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+.chat-container .top-chat{
+    width: 100%;
+    background: #fff;
+    border-radius: 7px 7px 0px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 10px 10px;
+}
+.chat-container .top-chat small{
+    position: absolute;
+    font-weight: 400;
+    margin: 25px 0px 0px 33px;
+    font-family: sans-serif;
+}
+.chat-container .top-chat .chat-profile{
+    display: flex;
+}
+.chat-container .top-chat .chat-profile span{
+    cursor: none;
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 30px;
+    color: dodgerblue;
+    margin: 6px 0px 0px 0px;
+}
+.chat-container .top-chat .chat-profile strong{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 4px 0px 0px 0px;
+    color: dodgerblue;
+}
+
+.chat-container .center-chat{
+    height: 385px;
+
+}
+.chat-container .center-chat .messagebox{
+    position: relative;
+    padding: 20px;
+    height: 500px;
+}
+.chat-container .center-chat .messagebox .message{
+    background: #fff;
+    position: relative;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    text-align: center;
+}
+.chat-container .center-chat .messagebox .message::before{
+    content: '';
+    position:absolute;
+    left: -10px;
+    top: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+.chat-container .bottom-chat .input{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 90%;
+    border-radius: 50px;
+    background: #fff;
+    padding: 5px;
+    margin: 0px 20px 10px 20px;
+}
+.chat-container .bottom-chat .input input{
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 80%;
+    height: 30px;
+    color: #272727;
+}
+.chat-container .bottom-chat .input span{
+    margin: 3px 3px 3px 2px;
+    color: #272727;
+    cursor: pointer;
+}
+
+
+/*.product-container .chat::after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    margin: 0px 7px 0px 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(150deg,dodgerblue 0%,dodgerblue 50%,transparent);
+}*/
+.close{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: white;
+    color: #000;
+    position: absolute;
+    margin: 10px 0px 0px 1030px;
+ 
+    
+}
+.close:hover{
+    background: #000;
+    color: #fff;
+}
+.product-container .product-content .left-product-content{
+    padding: 2px;
+    
+}
+.product-container .product-content .left-product-content img{
+    width: 80%;
+    height: 500px;
+    border-radius: 20px;
+}
+.product-container .product-content{
+    width: 45%;
+    height: 600px;
+    background: white;
+    padding: 20px;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    margin: 30px auto;
+    display: flex;
+
+
+} 
+.product-container .product-content .right-product-content{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+.top span{
+    font-family: 'loto',sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.top a{
+    font-family: 'loto',sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.top button{
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0px 0px 0px 180px;
+    background: rgb(247, 211, 211);
+}
+.right-product-content h3{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 40px 0px 20px 0px;
+}
+.right-product-content p{
+    font-family: 'loot',sans-serif;
+    font-size: 18px;
+    margin: 14px 3px 0px 0px;
+}
+.right-product-content strike{
+    color: gray;
+    margin: 0px 0px 0px 4px;
+}
+.right-product-content small{
+    margin: 30px 0px 0px 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.right-product-content .size-container{
+    display: flex;
+    justify-content: space-between;
+}
+.right-product-content .size{
+    width: 40px;
+    height: 40px;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    padding: 4px 0px 0px 13px;
+    color: #000;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: 0.4px solid #ccc;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+}
+.right-product-content .guide-size{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px 0px 4px;
+    border: 0.3px solid #ccc;
+    margin: 30px 0px 0px 0px;
+}
+.right-product-content .guide-size span{
+    color: #161616;
+}
+.right-product-content .guide-size #removeSize{
+    border-right: 0.3px solid #ccc;
+}
+.right-product-content .guide-size #addSize{
+    border-left: 0.3px solid #ccc;
+}
+.right-product-content .cart{
+    width: 100%;
+    height: 40px;
+    margin: 80px 0px 0px 0px;
+    border-radius: 50px;
+    font-family: 'loto',sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 0.3px solid #000;
+    cursor: pointer;
+} 
+.right-product-content  summary{
+    position: absolute;
+    font-family: 'loto',sans-serif;
+    font-size: 16px;
+    margin: 470px 0px 0px 100px;
+    cursor: pointer;
+}
