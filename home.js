@@ -12,6 +12,9 @@ let guide=document.querySelector('.guide');
 let paying=document.getElementById('paying');
 let closePay=document.getElementById('close-paying');
 let payingCont=document.querySelector('.paying');
+let getcart=document.querySelector('.mycart');
+let cart=document.getElementById('cart');
+let closeCart=document.getElementById('close-cart');
 
 
 
@@ -47,4 +50,13 @@ closePay.onclick =()=>{
 }
 paying.onclick=()=>{
     payingCont.style.display='inherit';
+    getcart.style.display='none';
+}
+
+cart.onclick =()=>{
+    getcart.style.display='inherit';
+    payingCont.style.display='none';
+}
+closeCart.onclick =()=>{
+    getcart.style.display='none';
 }
